@@ -123,6 +123,10 @@ bottom:0vw;
  }
  
  @media(min-width: 300px){
+  body{
+  height:200vw;
+  overflow:hidden;
+  }
 nav{
 padding: 2vw 0;
 font-size:4vw;
