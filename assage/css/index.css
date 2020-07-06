@@ -124,7 +124,7 @@ bottom:0vw;
  
  @media(min-width: 300px){
   body{
-  height:200vw;
+  height:150vw;
   overflow:hidden;
   }
 nav{
