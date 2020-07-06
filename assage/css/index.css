@@ -124,7 +124,7 @@ bottom:0vw;
  
  @media(min-width: 300px){
   body{
-  height:150vw;
+  height:200vw;
   overflow:hidden;
   }
 nav{
@@ -186,6 +186,10 @@ bottom:-110vw;
  }
 }
  @media(min-width: 992px){
+    body{
+  height:100vw;
+  overflow:hidden;
+  }
 nav{
 padding: 0.8vw 0;
 font-size:1.8vw;
