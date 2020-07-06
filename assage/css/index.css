@@ -128,8 +128,6 @@ padding: 2vw 0;
 font-size:4vw;
 }
 footer{
-position: absolute;
-bottom: -130vw;
 padding: 0.5vw 0;
 font-size:3vw;
 }
@@ -187,8 +185,6 @@ padding: 0.8vw 0;
 font-size:1.8vw;
 }
 footer{
-position: absolute;
-bottom: -10vw;
 padding: 0.5vw 0;
 font-size:1.3vw;
 }
