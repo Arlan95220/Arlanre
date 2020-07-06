@@ -134,11 +134,11 @@ padding: 0.5vw 0;
 font-size:3vw;
 }
 .back1{
-height:190vw;
+height:280vw;
 bottom:-200vw;
 }
 .back2{
-height:190vw;
+height:280vw;
 bottom:-200vw;
 }
 .back3{
@@ -193,11 +193,11 @@ padding: 0.5vw 0;
 font-size:3vw;
 }
 .back1{
-height:190vw;
+height:250vw;
 bottom:-200vw;
 }
 .back2{
-height:190vw;
+height:250vw;
 bottom:-200vw;
 }
 .back3{
@@ -236,7 +236,7 @@ border: 0.8vw solid #77FFCC;
  bottom:-200vw;
  }
  to {
- bottom:-70vw;
+ bottom:-50vw;
  }
  }
 }
