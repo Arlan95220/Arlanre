@@ -3,59 +3,78 @@
 <head>
  <title>Arlan</title>
  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-<link rel="stylesheet"  href="assage/css/index.css">
-<meta charset="utf-8">
-<script src="assage/js/index.js"></script>
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+	<link rel="stylesheet"  href="assage/css/index.css">
+	<meta charset="utf-8">
+	<script src="assage/js/index.js"></script>
 </head>
+
 <body>
 <nav align="right" class="shadow">
-<a href="javascript:I();" id="per"> 個人簡介 </a>/
-<a href="javascript:II();" id="por"> 作品集 </a>/
+<a href="javascript:I();" id="per"> 個人簡介 </a>
+/
+<a href="javascript:II();" id="por"> 作品集 </a>
+/
 <a href="javascript:III();" style="margin-right:0.8vw;" id="con"> 聯絡資訊 </a>
 </nav>
+
 <div id="back">
-<div class="back1"></div>
-<div class="back2"></div>
+	<div class="back1"></div>
+	<div class="back2"></div>
 <script>
-for(var i =0;i<20;i++)
+for(var i =0;i<15;i++)
 {
 document.write("<div class='back3' style='animation:b3 "+Math.floor((Math.random()*7)+2)+"s;animation-iteration-count: infinite;animation-timing-function: ease;left:"+Math.floor(Math.random()*97)+"%'></div>");
 }
 </script>
-
 </div>
+
+
 <div id="personal">
 <h3>Arlan<br></h3>
 <hr>
 <span id="inone">
-您好，我是中原大學資訊管理系學生，歡迎來到我的履歷網站。<br>
-如果您滿意我的作品，歡迎聯絡我們。所有商品皆為客製化設計，針對您的特色與需求量身訂製。<br><br>
+您好，這裡是Arlan，歡迎來到我的履歷網站。<br><br>
 </span> 
-<b><span id="intwo">專長:</span></b><br>
+<b><span id="intwo">工作方案:</span></b><br>
 <blockquote>
-JAVA、html、C#、Python<br>
-</blockquote>
-
-<b><span id="inthree">工作方案(包括但不限於):</span></b><br>
-<blockquote>
-<span id="infour">
-一頁式網站<br>
-個人網站<br>
-購物車網站<br>
-形象網站<br>
-UI設計<br>
-網頁後端(jsp & MySQL)<br>
+<span id="inthree">
+Android App<br>
+Wed<br>
+UI/UX設計<br>
 </span>
 </blockquote>
 
+
 </div>
 <div id="portfolio">
-<a target="_blank" href="https://arlan95220.github.io/Arlan/"><img class="shadow" src="assage/image/1.png"></a>
-<a target="_blank" href="https://arlan95220.github.io/Test/" ><img class="shadow" src="assage/image/4.png"></a>
-<a target="_blank" href="https://arlan95220.github.io/Resume/"><img class="shadow" src="assage/image/2.png"></a>
-<a target="_blank" href="https://arlan95220.github.io/CYIMastronomical.github.io/" ><img class="shadow" src="assage/image/3.png"></a>
-<a target="_blank" href="https://arlan95220.github.io/herbarium/"><img class="shadow" src="assage/image/5.png"></a>
+
+<a target="_blank" href="https://arlan95220.github.io/Arlan/"><img class="show" src="assage/image/1.png"></a>
+<a target="_blank" href="https://arlan95220.github.io/Test/" ><img class="show" src="assage/image/4.png"></a>
+<a target="_blank" href="https://arlan95220.github.io/Resume/"><img class="show" src="assage/image/2.png"></a>
+<a target="_blank" href="https://arlan95220.github.io/CYIMastronomical.github.io/" ><img class="show" src="assage/image/3.png"></a>
+<a target="_blank" href="https://arlan95220.github.io/herbarium/"><img class="show" src="assage/image/5.png"></a>
+
+<script>
+var imgw = window.innerWidth;
+var imgh = window.innerHeight;
+
+const show = document.getElementsByClassName("show");
+if(imgw>imgh){
+	for(var i = 0; i<show.length;i++){
+	show[i].style.width = imgw/3.8+"px";
+	show[i].style.height = imgh/3+"px";
+	}
+}
+else{
+	for(var i = 0; i<show.length;i++){
+		show[i].style.width = imgw/2.5+"px";
+		show[i].style.height = imgh/3.8+"px";
+	}
+}
+
+</script>
+
 </div>
 
 <div id="contact">
@@ -75,3 +94,4 @@ UI設計<br>
 </footer>
 </body>
 </html>
+
