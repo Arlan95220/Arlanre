@@ -31,6 +31,7 @@ document.write("<div class='back3' style='animation:b3 "+Math.floor((Math.random
 
 
 <div id="personal">
+<br>
 <h3>Arlan<br></h3>
 <hr>
 <span id="inone">
@@ -41,7 +42,7 @@ document.write("<div class='back3' style='animation:b3 "+Math.floor((Math.random
 <span id="inthree">
 Android App<br>
 Wed<br>
-UI/UX設計<br>
+UI/UX設計<br><br><br>
 </span>
 </blockquote>
 
@@ -73,17 +74,35 @@ else{
 	}
 }
 
+window.onresize = function(){
+imgw = window.innerWidth;
+imgh = window.innerHeight;
+if(imgw>imgh){
+	for(var i = 0; i<show.length;i++){
+	show[i].style.width = imgw/3.8+"px";
+	show[i].style.height = imgh/3+"px";
+	}
+}
+else{
+	for(var i = 0; i<show.length;i++){
+		show[i].style.width = imgw/2.5+"px";
+		show[i].style.height = imgh/3.8+"px";
+	}
+}
+}
+
 </script>
 
 </div>
 
 <div id="contact">
 <table><tr><td align="center">
+<br><br>
 <img src="assage/image/head.png"/ class="shadow"><br><br>
 <span id="call">
 <b>信箱:</b> zx24969557@gmail.com<br>
 <b>LINE:</b> ZX24969557<br>
-<b>手機:</b> 0981681067
+<b>手機:</b> 0981681067<br><br><br><br>
 </span>
 </td></tr></table>
 </div> 
@@ -94,4 +113,3 @@ else{
 </footer>
 </body>
 </html>
-
