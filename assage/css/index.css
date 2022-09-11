@@ -12,18 +12,20 @@ padding: 0 0.3vw;
 }
 nav a:hover{
 text-decoration: none;
+color:#666666;
 }
+
 .back1{
 clip-path: polygon(0 15%, 100% 29%, 100% 100%, 0% 100%);
 background:#BBFFEE;
 width:100%;
 position:absolute;
-opacity:0.5;
 animation:b1 5s;
 animation-iteration-count: infinite;
 animation-direction:alternate;
 animation-timing-function: ease-in-out;
 }
+
 .back2{
 clip-path: polygon(0 40%, 100% 22%, 100% 100%, 0% 100%);
 background:	#1E90FF;
@@ -49,6 +51,7 @@ opacity:0.5;
 #personal{
 position:absolute;
 padding:3vw;
+margin-top:2vw;
 letter-spacing:0.15vw;
 }
 #personal h3{
@@ -94,6 +97,7 @@ text-decoration: none;
 }
 footer a:hover{
 text-decoration: none;
+color:#666666;
 }
 
 @keyframes b1 {
@@ -105,7 +109,7 @@ text-decoration: none;
  }
  }
  
- @keyframes b2 {
+@keyframes b2 {
  from {
 clip-path: polygon(0 40%, 100% 22%, 100% 100%, 0% 100%);
  }
@@ -113,7 +117,7 @@ clip-path: polygon(0 40%, 100% 22%, 100% 100%, 0% 100%);
  clip-path: polygon(0 20%, 100% 40%, 100% 100%, 0% 100%);
  }
  }
-  @keyframes b3 {
+@keyframes b3 {
  from {
   bottom:0vw;
  }
@@ -122,83 +126,133 @@ clip-path: polygon(0 40%, 100% 22%, 100% 100%, 0% 100%);
  }
  }
  
- @media(min-width: 300px){
 nav{
 padding: 2vw 0;
 font-size:4vw;
 }
 footer{
 position: absolute;
-bottom: -200vw;
+bottom: 0vw;
 padding: 0.5vw 0;
-font-size:3vw;
+font-size:3.8vw;
 }
 .back1{
-height:280vw;
-bottom:-200vw;
+height:90vw;
+bottom:0vw;
 }
 .back2{
-height:280vw;
-bottom:-200vw;
+height:95vw;
+bottom:0vw;
 }
 .back3{
 width:3vw;
 height:3vw;
-bottom:-200vw;
+bottom:0vw;
 }
 #personal{
-font-size:4vw;
+font-size:4.6vw;
+line-height:8vw;
 }
 #personal h3{
 font-size:9vw;
+line-height:15vw;
 }
 #portfolio img{
-width:80vw;
-height:45vw;
-margin:2vw 2vw;
-}
-#portfolio img:hover{
-width:90vw;
-height:55vw;
-margin:1vw;
+margin:2vw 5vw 1vw 4vw;
 }
 #contact table{
-margin:30vw auto;
-font-size:5vw;
-line-height:7vw;
+margin:25vw auto;
+font-size:4.5vw;
+line-height:10vw;
 }
 #contact img{
-width:50vw;
-height:50vw;
+width:45vw;
+height:45vw;
 border: 0.8vw solid #77FFCC;
 }
 @keyframes b3 {
  from {
- bottom:-170vw;
+ bottom:0vw;
  }
  to {
- bottom:-20vw;
+ bottom:60vw;
  }
  }
 }
-@media(min-width: 500px){
-	nav{
+ 
+@media(min-width: 0px){
+nav{
 padding: 2vw 0;
 font-size:4vw;
 }
 footer{
 position: absolute;
-bottom: -200vw;
+bottom: 0vw;
+padding: 0.5vw 0;
+font-size:3.8vw;
+}
+.back1{
+height:90vw;
+bottom:0vw;
+}
+.back2{
+height:95vw;
+bottom:0vw;
+}
+.back3{
+width:3vw;
+height:3vw;
+bottom:0vw;
+}
+#personal{
+font-size:4.6vw;
+line-height:8vw;
+}
+#personal h3{
+font-size:9vw;
+line-height:15vw;
+}
+#portfolio img{
+margin:2vw 5vw 1vw 4vw;
+}
+#contact table{
+margin:25vw auto;
+font-size:4.5vw;
+line-height:10vw;
+}
+#contact img{
+width:45vw;
+height:45vw;
+border: 0.8vw solid #77FFCC;
+}
+@keyframes b3 {
+ from {
+ bottom:0vw;
+ }
+ to {
+ bottom:60vw;
+ }
+ }
+}
+
+@media(min-width: 500px){
+nav{
+padding: 2vw 0;
+font-size:3vw;
+}
+footer{
+position: absolute;
+bottom:0;
 padding: 0.5vw 0;
 font-size:3vw;
 }
 .back1{
-height:250vw;
-bottom:-200vw;
+height:80vw;
+bottom:0vw;
 }
 .back2{
-height:250vw;
-bottom:-200vw;
+height:85vw;
+bottom:0vw;
 }
 .back3{
 width:3vw;
@@ -207,25 +261,21 @@ bottom:-200vw;
 }
 #personal{
 font-size:4vw;
+line-height:8vw;
 }
 #personal h3{
 font-size:9vw;
+line-height:15vw;
 }
 #portfolio img{
-width:60vw;
-height:35vw;
-margin:2vw 2vw;
-}
-#portfolio img:hover{
-width:90vw;
-height:55vw;
-margin:1vw;
+margin:2vw 5vw 1vw 4vw;
 }
 #contact table{
 margin:30vw auto;
 font-size:5vw;
 line-height:7vw;
 }
+
 #contact img{
 width:50vw;
 height:50vw;
@@ -233,13 +283,14 @@ border: 0.8vw solid #77FFCC;
 }
 @keyframes b3 {
  from {
- bottom:-200vw;
+ bottom:0vw;
  }
  to {
- bottom:-50vw;
+ bottom:55vw;
  }
  }
 }
+
 @media(min-width: 992px){
 nav{
 padding: 0.8vw 0;
@@ -247,56 +298,53 @@ font-size:1.8vw;
 }
 footer{
 position: absolute;
-bottom: -55vw;
 padding: 0.5vw 0;
-font-size:1.3vw;
+font-size:1.5vw;
 }
 .back1{
-height:80vw;
-bottom: -55vw;
+height:25vw;
+bottom: 0vw;
 }
 .back2{
-height:80vw;
-bottom: -55vw;
+height:30vw;
+bottom: 0vw;
 }
 .back3{
-width:3vw;
-height:3vw;
-bottom: -55vw;
+width:2vw;
+height:2vw;
+bottom: 0vw;
 }
+
+
 #personal{
-font-size:2vw;
+font-size:1.8vw;
+line-height:3vw;
 }
 #personal h3{
-font-size:5vw;
+font-size:4vw;
+line-height:8vw;
 }
+
 #portfolio img{
-width:40vw;
-height:20vw;
-margin:2vw 4vw;
-}
-#portfolio img:hover{
-width:46vw;
-height:24vw;
-margin:1vw;
+margin:2vw 1vw 1vw 1vw;
 }
 #contact table{
 margin:6vw auto;
-font-size:2vw;
+font-size:1.5vw;
 line-height:3vw;
 }
 #contact img{
-width:25vw;
-height:25vw;
+width:18vw;
+height:18vw;
 border: 0.8vw solid #77FFCC;
 }
 
 @keyframes b3 {
  from {
-bottom: -55vw;
+bottom: 0vw;
  }
  to {
- bottom:-10vw;
+ bottom:15vw;
  }
  }
 }
@@ -309,27 +357,24 @@ nav{
 padding: 0.8vw 0;
 font-size:1.3vw;
 }
+
 footer{
 position: absolute;
-bottom: 0;
 padding: 0.5vw 0;
 font-size:1vw;
 }
+
 #personal{
-font-size:1.3vw;
+font-size:1.5vw;
+line-height:3vw;
 }
+
 #personal h3{
-font-size:2.8vw;
+font-size:3vw;
 }
+
 #portfolio img{
-width:28vw;
-height:15vw;
-margin:3vw 2vw;
-}
-#portfolio img:hover{
-width:33vw;
-height:18vw;
-margin:0;
+margin:2vw 0vw 1vw 3vw;
 }
 #contact table{
 margin:6vw auto;
@@ -342,12 +387,12 @@ height:15vw;
 border: 0.8vw solid #77FFCC;
 }
 .back1{
-height:50vw;
-top:10vw;
+height:30vw;
+bottom:0vw;
 }
 .back2{
-height:50vw;
-top:10vw;
+height:35vw;
+bottom:0vw;
 }
 .back3{
 width:1.5vw;
@@ -359,7 +404,7 @@ bottom:0vw;
   bottom:0vw;
  }
  to {
- bottom:15vw;
+ bottom:20vw;
  }
  }
 }
