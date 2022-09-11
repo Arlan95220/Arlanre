@@ -4,6 +4,9 @@ font-family:微軟正黑體;
 nav{
 background:	#444444;
 color:#FFFFFF;
+position: fixed;
+width:100%;
+z-index:1;
 }
 nav a{
 color:#FFFFFF;
@@ -19,7 +22,8 @@ color:#666666;
 clip-path: polygon(0 15%, 100% 29%, 100% 100%, 0% 100%);
 background:#BBFFEE;
 width:100%;
-position:absolute;
+position: fixed;
+z-index: -1;
 animation:b1 5s;
 animation-iteration-count: infinite;
 animation-direction:alternate;
@@ -30,7 +34,8 @@ animation-timing-function: ease-in-out;
 clip-path: polygon(0 40%, 100% 22%, 100% 100%, 0% 100%);
 background:	#1E90FF;
 width:100%;
-position:absolute;
+position: fixed;
+z-index: -1;
 opacity:0.2;
 animation:b2 5s;
 animation-iteration-count: infinite;
@@ -44,8 +49,9 @@ background: -webkit-radial-gradient(circle,white,#1E90FF);
 background: -o-radial-gradient(circle,white,#1E90FF);
 background: -moz-radial-gradient(circle,white,#1E90FF);
 background: radial-gradient(circle,white,#1E90FF);
-position:absolute;
+position: fixed;
 opacity:0.5;
+z-index: -1;
 }
 
 #personal{
@@ -70,6 +76,8 @@ background:linear-gradient(to right,#FFFFFF,#AFEEEE,#FFFFFF);
 }
 #portfolio{
 position:absolute;
+padding-top:15vw;
+padding-bottom:10vw;
 display:none;
 }
 #portfolio img{
@@ -212,6 +220,9 @@ line-height:8vw;
 font-size:9vw;
 line-height:15vw;
 }
+#portfolio{
+padding-top:6vw;
+}
 #portfolio img{
 margin:2vw 5vw 1vw 4vw;
 }
@@ -241,7 +252,7 @@ padding: 2vw 0;
 font-size:3vw;
 }
 footer{
-position: absolute;
+position: fixed;
 bottom:0;
 padding: 0.5vw 0;
 font-size:3vw;
@@ -266,6 +277,9 @@ line-height:8vw;
 #personal h3{
 font-size:9vw;
 line-height:15vw;
+}
+#portfolio{
+padding-top:8vw;
 }
 #portfolio img{
 margin:2vw 5vw 1vw 4vw;
@@ -324,7 +338,9 @@ line-height:3vw;
 font-size:4vw;
 line-height:8vw;
 }
-
+#portfolio{
+padding-top:6vw;
+}
 #portfolio img{
 margin:2vw 1vw 1vw 1vw;
 }
@@ -372,7 +388,9 @@ line-height:3vw;
 #personal h3{
 font-size:3vw;
 }
-
+#portfolio{
+padding-top:4vw;
+}
 #portfolio img{
 margin:2vw 0vw 1vw 3vw;
 }
